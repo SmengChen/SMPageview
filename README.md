@@ -3,7 +3,7 @@
 ![](https://github.com/chenshimeng/SMPageview/blob/master/轮播图片.gif)
 
 
-使用方式：
+（1）简单使用方式：
 
     NSArray *arr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SMPageDefaultData" ofType:@"plist"]];
 
@@ -11,8 +11,8 @@
     
     [self.view addSubview:imageView];
     
-    
-若想自定义轮播控件，则：1、自定义类，继承自SMPageView。实现此抽象类的接口。
+    
+（2）自定义轮播控件方式，则：1、自定义类，继承自SMPageView。实现此抽象类的接口。
 
     @interface SMHomeActivityCollectionView : SMPageView
 
