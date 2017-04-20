@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>advertisingPkno</key>
+		<string>4006c744-f13d-4005-b6a4-f42fbc23f8bf</string>
+		<key>completeImgUrl</key>
+		<string>http://appimage.huafatech.com/data2/var/upload/imgs/advertising/1491381199970.jpg</string>
+		<key>imagePath</key>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492522381156&amp;di=6070f6da03edac9555e32174f84fb1df&amp;imgtype=0&amp;src=http%3A%2F%2Fimg2015.zdface.com%2F20150530%2F3f908a4796273f3eac0c854d090138b2.jpg</string>
+		<key>img</key>
+		<string>1491381199970.jpg</string>
+		<key>longDesc</key>
+		<string>华发峰尚</string>
+		<key>url</key>
+		<string>http://www.jiuyiadgz.com/fswls/</string>
+	</dict>
+	<dict>
+		<key>advertisingPkno</key>
+		<string>efc6389e-1681-4a96-8185-20797f5a1f8f</string>
+		<key>completeImgUrl</key>
+		<string>http://appimage.huafatech.com/data2/var/upload/imgs/advertising/1492057480462.jpg</string>
+		<key>imagePath</key>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492522381156&amp;di=0364202ac9f36eecfdaa0003f966bc6d&amp;imgtype=0&amp;src=http%3A%2F%2Fimg2.3lian.com%2F2014%2Ff4%2F199%2Fd%2F49.jpg</string>
+		<key>img</key>
+		<string>1492057480462.jpg</string>
+		<key>longDesc</key>
+		<string>最美花海</string>
+		<key>url</key>
+		<string>https://huafaapp.huafatech.com/front/forum/news/index.do?g_mode=theme&amp;theme_pk=6c5cda91-f64e-432e-84f6-9e4176650eb2</string>
+	</dict>
+	<dict>
+		<key>advertisingPkno</key>
+		<string>efc6389e-1681-4a96-8185-20797f5a1f8f</string>
+		<key>completeImgUrl</key>
+		<string>http://appimage.huafatech.com/data2/var/upload/imgs/advertising/1492057480462.jpg</string>
+		<key>imagePath</key>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492522001147&amp;di=54a045586bb59a78c5e6eaed5369bd2c&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.wallcoo.com%2Fanimal%2FDogs_Summer_and_Winter%2Fwallpapers%2F1920x1200%2FDogsB10_Lucy.jpg</string>
+		<key>img</key>
+		<string>1492057480462.jpg</string>
+		<key>longDesc</key>
+		<string>最美花海</string>
+		<key>url</key>
+		<string>https://huafaapp.huafatech.com/front/forum/news/index.do?g_mode=theme&amp;theme_pk=6c5cda91-f64e-432e-84f6-9e4176650eb2</string>
+	</dict>
+	<dict>
+		<key>advertisingPkno</key>
+		<string>efc6389e-1681-4a96-8185-20797f5a1f8f</string>
+		<key>completeImgUrl</key>
+		<string>http://appimage.huafatech.com/data2/var/upload/imgs/advertising/1492057480462.jpg</string>
+		<key>imagePath</key>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492522001146&amp;di=51c45046125c3a4725228820c0a5dceb&amp;imgtype=0&amp;src=http%3A%2F%2Fimage5.tuku.cn%2Fpic%2Fdongwushijie%2Fendearing_dog_181%2F098.jpg</string>
+		<key>img</key>
+		<string>1492057480462.jpg</string>
+		<key>longDesc</key>
+		<string>最美花海</string>
+		<key>url</key>
+		<string>https://huafaapp.huafatech.com/front/forum/news/index.do?g_mode=theme&amp;theme_pk=6c5cda91-f64e-432e-84f6-9e4176650eb2</string>
+	</dict>
+</array>
+</plist>
