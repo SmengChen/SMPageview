@@ -12,7 +12,7 @@
     [self.view addSubview:imageView];
     
     
-若想自定义轮播控件：则自定义类，继承自SMPageView。实现此抽象类的接口。
+若想自定义轮播控件，则：1、自定义类，继承自SMPageView。实现此抽象类的接口。
 
     @interface SMHomeActivityCollectionView : SMPageView
 
@@ -47,6 +47,51 @@
 
     @end
     
+  2、自定义工厂类
+  
+      @interface SMActivityFactory : SMPageFactory
+        +(UIView *)getActicityKitFromData:(NSArray *)ads
+                            frame:(CGRect)frame
+                         savePath:(NSString *)path;
+        @end
+
+       @implementation SMActivityFactory
+
+        +(UIView *)getActicityKitFromData:(NSArray *)ads
+                            frame:(CGRect)frame
+                         savePath:(NSString *)path{
+        if (![ads isKindOfClass:[NSArray class]]) {return [[UIView alloc] init];}
+        if (ads.count == 0) {return [[UIView alloc] init];}
+         if (ads.count > 1) {
+        SMHomeActivityCollectionView *viewc = [[SMHomeActivityCollectionView alloc] initViewWithFrame:frame autoPlayTime:4.0 imagesArray:ads clickCallBack:^(NSInteger index) {
+            SMHomeAcitivityItem *item = ads[index];
+            if (![item isKindOfClass:[SMHomeAcitivityItem class]]) {
+                return;
+            }
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            [dict setValue:item.activityName forKey:@"longDesc"];
+            if (![item.outUrl isEqualToString:@""]) {
+                [dict setValue:item.outUrl forKey:@"url"];
+            }else{
+                [dict setValue:@"" forKey:@"url"];
+                [dict setValue:item.activityDesc forKey:@"activityDesc"];
+            }
+            
+            NSNotification *notification =[NSNotification notificationWithName:@"SMHomeAcitivityViewClickNotifaication" object:nil userInfo:dict];
+            [[NSNotificationCenter defaultCenter] postNotification:notification];
+            
+        }];
+        return viewc;
+        }else{
+        SMHomeActivityCollectionViewCell *viewc = [[NSBundle mainBundle] loadNibNamed:@"SMHomeActivityCollectionViewCell" owner:nil options:nil].firstObject;
+        viewc.item = ads[0];
+        viewc.frame = frame;
+        viewc.autoresizingMask = UIViewAutoresizingNone;
+        return viewc;
+         }
+      }
+         @end
+         
   在外界使用
   
     - (void)setupActivityPage {
